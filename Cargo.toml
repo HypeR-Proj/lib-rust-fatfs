@@ -1,29 +1,20 @@
 # SPDX-FileCopyrightText: 2026 roolrz
 # SPDX-License-Identifier: MIT
 
+
 [package]
 name = "fatfs"
 version = "0.4.0"
-authors = [
-    "Rafał Harabień <rafalh92@outlook.com>",
-]
+authors = ["Rafał Harabień <rafalh92@outlook.com>"]
 edition = "2021"
 rust-version = "1.71"
-repository = "https://github.com/HypeR-Proj/rust-fatfs"
+repository = "https://github.com/HypeR-Proj/lib-rust-fatfs"
 readme = "README.md"
-keywords = [
-    "fat",
-    "filesystem",
-    "no_std",
-]
-categories = [
-    "filesystem",
-]
+keywords = ["fat", "filesystem", "no_std"]
+categories = ["filesystem"]
 license = "MIT"
 description = "FAT filesystem library.\n"
-exclude = [
-    "resources/*",
-]
+exclude = ["resources/*"]
 
 [features]
 std = []
@@ -31,26 +22,13 @@ lfn = []
 alloc = []
 unicode = []
 log_level_error = []
-log_level_warn = [
-    "log_level_error",
-]
-log_level_info = [
-    "log_level_warn",
-]
-log_level_debug = [
-    "log_level_info",
-]
-log_level_trace = [
-    "log_level_debug",
-]
-default = [
-    "chrono",
-    "std",
-    "alloc",
-    "lfn",
-    "unicode",
-    "log_level_trace",
-]
+log_level_warn = ["log_level_error"]
+log_level_info = ["log_level_warn"]
+log_level_debug = ["log_level_info"]
+log_level_trace = ["log_level_debug"]
+default = ["chrono", "std", "alloc", "lfn", "unicode", "log_level_trace"]
+
+[dependencies]
 
 [dependencies.bitflags]
 version = "2"
@@ -63,9 +41,7 @@ default-features = false
 [dependencies.chrono]
 version = "0.4"
 default-features = false
-features = [
-    "clock",
-]
+features = ["clock"]
 optional = true
 
 [dev-dependencies]
