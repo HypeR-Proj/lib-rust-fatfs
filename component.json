@@ -1,33 +1,12 @@
 {
+  "SPDX-FileCopyrightText": "2026 roolrz",
+  "SPDX-License-Identifier": "Apache-2.0",
   "version": 1,
-  "name": "rust-fatfs",
+  "name": "lib-rust-fatfs",
   "kind": "library",
   "origin": {
     "repository": "https://github.com/roolrz/HypeR",
     "commit": "8d42d047058a2b58a291803700e86487fb723f7a"
-  },
-  "sources": {
-    "Cargo.toml": "third_party/rust-fatfs/Cargo.toml",
-    "LICENSE.txt": "third_party/rust-fatfs/LICENSE.txt",
-    "PROVENANCE.md": "third_party/rust-fatfs/PROVENANCE.md",
-    "README.md": "third_party/rust-fatfs/README.md",
-    "src/boot_sector.rs": "third_party/rust-fatfs/src/boot_sector.rs",
-    "src/chain_cache.rs": "third_party/rust-fatfs/src/chain_cache.rs",
-    "src/dir.rs": "third_party/rust-fatfs/src/dir.rs",
-    "src/dir_entry.rs": "third_party/rust-fatfs/src/dir_entry.rs",
-    "src/error.rs": "third_party/rust-fatfs/src/error.rs",
-    "src/file.rs": "third_party/rust-fatfs/src/file.rs",
-    "src/fs.rs": "third_party/rust-fatfs/src/fs.rs",
-    "src/io.rs": "third_party/rust-fatfs/src/io.rs",
-    "src/lib.rs": "third_party/rust-fatfs/src/lib.rs",
-    "src/log_macros.rs": "third_party/rust-fatfs/src/log_macros.rs",
-    "src/table.rs": "third_party/rust-fatfs/src/table.rs",
-    "src/time.rs": "third_party/rust-fatfs/src/time.rs"
-  },
-  "SPDX-FileCopyrightText": "2026 roolrz",
-  "SPDX-License-Identifier": "Apache-2.0",
-  "mounts": {
-    "": "third_party/rust-fatfs"
   },
   "packages": [],
   "tests": [
@@ -38,13 +17,5 @@
       "third_party/rust-fatfs/Cargo.toml",
       "--lib"
     ]
-  ],
-  "cargo_context": {
-    "Cargo.toml": {
-      "workspace": null,
-      "membership": null,
-      "dependency_paths": {},
-      "inherited_dependencies": {}
-    }
-  }
+  ]
 }
