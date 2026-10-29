@@ -2,7 +2,7 @@ Rust FAT FS
 ===========
 
 [![CI Status](https://github.com/rafalh/rust-fatfs/actions/workflows/ci.yml/badge.svg)](https://github.com/rafalh/rust-fatfs/actions/workflows/ci.yml)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.txt)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
 [![crates.io](https://img.shields.io/crates/v/fatfs)](https://crates.io/crates/fatfs)
 [![Documentation](https://docs.rs/fatfs/badge.svg)](https://docs.rs/fatfs)
 [![Minimum rustc version](https://img.shields.io/badge/rustc-1.71+-yellow.svg)](https://blog.rust-lang.org/2023/07/13/Rust-1.71.0/)
@@ -73,3 +73,14 @@ Note: above features are enabled by default and were designed primarily for `no_
 License
 -------
 The MIT license. See `LICENSE.txt`.
+
+## Workspace tests
+
+Use the [HypeR workspace](https://github.com/HypeR-Proj/HypeR) to resolve dependencies:
+
+```sh
+./HypeR/hyper test rust-fatfs
+```
+
+Build paths in detailed documentation refer to the generated `out/system` directory.
+Edit this repository and prepare the workspace again before building.

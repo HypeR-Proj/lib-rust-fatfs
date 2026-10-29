@@ -35,7 +35,16 @@
       "cargo",
       "test",
       "--manifest-path",
-      "third_party/rust-fatfs/Cargo.toml"
+      "third_party/rust-fatfs/Cargo.toml",
+      "--lib"
     ]
-  ]
+  ],
+  "cargo_context": {
+    "Cargo.toml": {
+      "workspace": null,
+      "membership": null,
+      "dependency_paths": {},
+      "inherited_dependencies": {}
+    }
+  }
 }
