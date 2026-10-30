@@ -17,5 +17,19 @@
       "third_party/rust-fatfs/Cargo.toml",
       "--lib"
     ]
-  ]
+  ],
+  "build": {
+    "steps": [
+      [
+        "cargo",
+        "build",
+        "--manifest-path",
+        "{source}/Cargo.toml",
+        "--target-dir",
+        "{out}",
+        "--release",
+        "--locked"
+      ]
+    ]
+  }
 }
